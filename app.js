@@ -17,6 +17,6 @@ app.get('/',(req,res) => {
     return res.send('<h1> You are welcome to my page </h1>');
 });
 
-server.listen(8081,()=>{
+server.listen(process.env.PORT || 8081,()=>{
     console.log('we are listening to port localhost');
 });
